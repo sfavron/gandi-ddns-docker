@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
     <Container version="2">
     <Name Default="Gandi DDNS">Gandi DDNS</Name>
-    <Repository>sfavron/gandi-ddns-docker</Repository>
+    <Repository>stephenf/gandi-ddns</Repository>
     <Config Type="Variable" Name="API Key" Target="GANDI_API_KEY" Default="" Description="Gandi.net production API key" Mask="true" Required="true"></Config>
     <Config Type="Variable" Name="Domain" Target="GANDI_DOMAIN" Default="" Description="Domain for which to update DNS" Required="true"></Config>
     <Config Type="Variable" Name="A Record Name" Target="GANDI_A_NAME" Default="" Description="Name of the A record to be updated" Display="advanced"></Config>
