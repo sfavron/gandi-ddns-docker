@@ -4,9 +4,6 @@
     <Repository>stephenf/gandi-ddns</Repository>
     <Config Type="Variable" Name="API Key" Target="GANDI_API_KEY" Default="" Description="Gandi.net production API key" Mask="true" Required="true"></Config>
     <Config Type="Variable" Name="Domain" Target="GANDI_DOMAIN" Default="" Description="Domain for which to update DNS" Required="true"></Config>
-    <Config Type="Variable" Name="A Record Name" Target="GANDI_A_NAME" Default="" Description="Name of the A record to be updated" Display="advanced"></Config>
-    <Config Type="Variable" Name="TTL" Target="GANDI_TTL" Default="" Description="DNS record TTL" Display="advanced"></Config>
-    <Config Type="Variable" Name="Gandi API Path" Target="GANDI_API" Default="" Description="Gandi.net API path" Display="advanced"></Config>
-    <Config Type="Variable" Name="Ipify Retries" Target="IPIFY_RETRIES" Default="" Description="Number of retries for ipify requests" Display="advanced"></Config>
-    <Config Type="Variable" Name="Ipify API Path" Target="IPIFY_API" Default="" Description="Ipify API path" Display="advanced"></Config>
+    <Config Type="Variable" Name="A Record Name" Target="GANDI_A_NAME" Default="@" Description="Name of the A record to be updated"></Config>
+    <Config Type="Variable" Name="TTL" Target="GANDI_TTL" Default="900" Description="DNS record TTL"></Config>
 </Container>
