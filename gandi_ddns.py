@@ -87,6 +87,8 @@ def update_record(url, headers, payload):
 def main():
     config = get_config()
 
+    print(config)
+
     # Retrieve API key
     apikey = config['apikey']
 
