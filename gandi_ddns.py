@@ -18,8 +18,9 @@ def get_ip_inner(ipify_api):
     # Get external IP
     try:
         # Could be any service that just gives us a simple raw ASCII IP address (not HTML etc)
-        r = requests.get(ipify_api, timeout=3)
-    except requests.exceptions.RequestException:
+        r = requests.get(ipify_api, timeout=5)
+    except requests.exceptions.RequestException as e:
+        print(e)
         raise GandiDdnsError('Failed to retrieve external IP.')
     if r.status_code != 200:
         raise GandiDdnsError(
